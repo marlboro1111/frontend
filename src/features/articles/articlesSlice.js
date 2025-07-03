@@ -279,7 +279,7 @@ const API_HOST = 'https://b4d6-106-51-159-190.ngrok-free.app';
 
 // Fetch trending articles
 export const fetchTrendingArticles = createAsyncThunk('articles/fetchTrending', async () => {
-  const response = await axios.get(`${API_HOST}/v2/trending`);
+  axios.get(`${API_HOST}/api/articles/trending`);
   console.log(response.data);
   return Array.isArray(response.data) ? response.data : [];
 });
