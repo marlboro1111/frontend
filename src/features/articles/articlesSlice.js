@@ -275,7 +275,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 // TODO: Move to Env file
-const API_HOST = ' https://b4d6-106-51-159-190.ngrok-free.app ';
+const API_HOST = 'https://b4d6-106-51-159-190.ngrok-free.app';
 
 // Fetch trending articles
 export const fetchTrendingArticles = createAsyncThunk('articles/fetchTrending', async () => {
